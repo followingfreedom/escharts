@@ -26,13 +26,11 @@ module.exports = {
     ]
   },
   devServer:{
-        hot:true,
-        inline:true,
         proxy: {
-            '/data/api/*': {
-                target: 'http://localhost:9090',
-                secure: false
-            }
+          '/eschart/': {
+            target: 'http://localhost:8081',
+            secure: false
+          }
         }
   }
 };

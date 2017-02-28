@@ -134,7 +134,7 @@ class Dashboard extends React.Component{
 
 	render(){
 		console.log("begin");
-		axios.get('http://localhost:8090/index').then(function(response){
+		axios.get('/eschart/comments').then(function(response){
 			console.log(response.data);
 		});
 		return (
